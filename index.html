@@ -30,9 +30,7 @@
     <script type="application/x-flashcard-locked" data-flashcard-type="" src="TemplateData/UnityProgress.js"></script>
     <script type="application/x-flashcard-locked" data-flashcard-type="" src="Build/UnityLoader.js"></script>
     <script type="application/x-flashcard-locked" data-flashcard-type="">
-        document.addEventListener('DOMContentLoaded', function () {
-            var gameInstance = UnityLoader.instantiate("gameContainer", "Build/SnowRider3D-gd-1.json", { onProgress: UnityProgress, Module: { onRuntimeInitialized: function () { UnityProgress(gameInstance, "complete") } } });
-        });
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/SnowRider3D-gd-1.json", { onProgress: UnityProgress, Module: { onRuntimeInitialized: function () { UnityProgress(gameInstance, "complete"); } } });
     </script>
 <style id="flashcard-repo-lock-style">
 #flashcard-repo-lock{position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;padding:20px;background:#080808;color:#eee;font-family:"Courier New",monospace}
@@ -50,9 +48,6 @@
     <div class="webgl-content">
         <div id="gameContainer" style="width: 960px; height: 600px; margin: auto"></div>
     </div>
-<script type="application/x-flashcard-locked" data-flashcard-type="" id="flashcard-repo-lock-script">
-(()=>{const overlay=document.getElementById("flashcard-repo-lock");const form=document.getElementById("flashcard-repo-lock-form");const input=document.getElementById("flashcard-repo-lock-input");const error=document.getElementById("flashcard-repo-lock-error");if(!overlay||!form||!input||!error)return;document.documentElement.style.overflow="hidden";document.body.style.overflow="hidden";form.addEventListener("submit",e=>{e.preventDefault();if(input.value==="pness"){overlay.remove();document.documentElement.style.overflow="";document.body.style.overflow="";}else{error.textContent="Incorrect password. Try again.";input.select();}});input.focus();})();
-</script>
 </body>
 </html>
 
